@@ -1,79 +1,61 @@
-<h1 align="center">
-  <a href="">
-    <img src="" alt="Logo" width="100" height="100">
-  </a>
-</h1>
-
 <div align="center">
-  PROJECT_NAME
+  <h1>QueraLens</h1>
   <br />
   <a href="#getting-started"><strong>Getting Started »</strong></a>
   <br />
   <br />
-  <a href="https://github.com/GITHUB_USERNAME/REPO_SLUG/issues/new?assignees=&labels=bug&template=BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
+  <a href="https://github.com/HamidMolareza/QueraLens/issues/new?assignees=&labels=bug&template=BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
   ·
-  <a href="https://github.com/GITHUB_USERNAME/REPO_SLUG/issues/new?assignees=&labels=enhancement&template=FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a>
+  <a href="https://github.com/HamidMolareza/QueraLens/issues/new?assignees=&labels=enhancement&template=FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a>
   .
-  <a href="https://github.com/GITHUB_USERNAME/REPO_SLUG/issues/new?assignees=&labels=question&template=SUPPORT_QUESTION.md&title=support%3A+">Ask a Question</a>
+  <a href="https://github.com/HamidMolareza/QueraLens/issues/new?assignees=&labels=question&template=SUPPORT_QUESTION.md&title=support%3A+">Ask a Question</a>
 </div>
 
 <div align="center">
 <br />
 
-[![code with love by GITHUB_USERNAME](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-GITHUB_USERNAME-ff1414.svg?style=flat-square)](https://github.com/GITHUB_USERNAME)
+![Docker Pulls](https://img.shields.io/docker/pulls/hamidmolareza/quera-lens)
+![Docker Image Size (latest semver)](https://badgen.net/docker/size/hamidmolareza/quera-lens?icon=docker&label=image%20size)
+![Docker Image Version](https://img.shields.io/docker/v/hamidmolareza/quera-lens?sort=semver)
 
-![Build Status](https://github.com/GITHUB_USERNAME/REPO_SLUG/actions/workflows/ACTION.yaml/badge.svg?branch=BRANCH)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/GITHUB_USERNAME/REPO_SLUG)
-
-![GitHub](https://img.shields.io/github/license/GITHUB_USERNAME/REPO_SLUG)
-
-[![Pull Requests welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/GITHUB_USERNAME/REPO_SLUG/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
-
-<!-- You can add more badges from this site: https://shields.io/ -->
+![GitHub](https://img.shields.io/github/license/HamidMolareza/QueraLens)
+[![Pull Requests welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/HamidMolareza/QueraLens/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 
 </div>
 
-<details>
-<summary>Table of Contents</summary>
-
-- [About](#about)
-    - [Demo](#demo)
-    - [Built With](#built-with)
-- [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-- [Usage](#usage)
-    - [Documentation](#documentation)
-- [Known issues](#known-issues)
-- [CHANGELOG](#changelog)
-- [Features](#features)
-- [Roadmap](#roadmap)
-- [Support](#support)
-- [Used By](#used-by)
-- [FAQ](#faq)
-- [Project assistance](#project-assistance)
-- [Contributing](#contributing)
-- [Authors & contributors](#authors--contributors)
-- [Security](#security)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
-- [Related](#related)
-
-</details>
-
 ## About
 
-> **[?]**
-> Provide general information about your project here.
-> Put a meaningful, short, plain-language description of:
-> What problem does it (intend to) solve?
-> What is the purpose of your project?
-> What this project is trying to accomplish and why it matters?
-> Why did you undertake it?
-> Describe the problem(s) this project solves.
-> Describe how this software can improve the lives of its audience.
-> Describe what sets this apart from related-projects.
-> You don't have to answer all the questions -- just the ones relevant to your project.
+**QueraLens** is a static site generator designed to display solutions for the Quera site. It works in tandem with the *
+*[quera-readme-generator](https://github.com/HamidMolareza/QueraReadmeGenerator)** project, which extracts and formats
+information into a static, user-friendly website.
+
+### Purpose
+
+The main goal of QueraLens is to enhance the user experience (UX) by incorporating features like search and filtering,
+making it easier to navigate and find specific solutions.
+
+### Problem It Solves
+
+Solutions stored in repositories can be difficult to browse and search. By generating a static site with advanced search
+and filtering capabilities, QueraLens improves organization and accessibility, ensuring users can quickly locate the
+information they need.
+
+### Why It Matters
+
+This project adds significant value by:
+
+- Automating the creation of a well-structured, easily navigable static site.
+- Improving UX through intuitive design and interactive features like search and filter.
+- Streamlining workflows with GitHub Actions, enabling automatic site updates whenever new solutions are added.
+
+### Integration with GitHub Actions
+
+QueraLens can be paired with **[quera-readme-generator](https://github.com/HamidMolareza/QueraReadmeGenerator)** in a
+GitHub Actions workflow to automatically generate and update the static site whenever new Quera solutions are pushed to
+the repository. This ensures your site remains current without manual intervention.
+
+QueraLens is the ideal tool for developers who want to present their Quera solutions in a polished, functional, and
+user-friendly format.
 
 ### Demo
 
@@ -87,7 +69,7 @@
 > Please provide your screenshots here.
 
 |                               Home Page                               |                               Login Page                               |
-| :-------------------------------------------------------------------: | :--------------------------------------------------------------------: |
+|:---------------------------------------------------------------------:|:----------------------------------------------------------------------:|
 | <img src="docs/images/screenshot.png" title="Home Page" width="100%"> | <img src="docs/images/screenshot.png" title="Login Page" width="100%"> |
 
 </details>
@@ -107,13 +89,16 @@
 
 > **[?]**
 > What are the project requirements/dependencies?
-> Describe any dependencies that must be installed for this software to work. This includes programming languages, databases or other storage mechanisms, build tools, frameworks, and so forth. If specific versions of other software are required, or known not to work, call that out.
+> Describe any dependencies that must be installed for this software to work. This includes programming languages,
+> databases or other storage mechanisms, build tools, frameworks, and so forth. If specific versions of other software are
+> required, or known not to work, call that out.
 
 ### Installation
 
 > **[?]**
 > Describe how to install and get started with the project.
-> Detailed instructions on how to install, configure, and get the project running. This should be frequently tested to ensure reliability. Alternatively, link to a separate [INSTALL](INSTALL.md) document.
+> Detailed instructions on how to install, configure, and get the project running. This should be frequently tested to
+> ensure reliability. Alternatively, link to a separate [INSTALL](INSTALL.md) document.
 
 ## Usage
 
@@ -139,21 +124,8 @@ Document any known significant shortcomings with the software.
 
 ## CHANGELOG
 
-## Features
+Please see [Changelog.md](./CHANGELOG.md) file.
 
--
--
-
-## Roadmap
-
-See the [open issues](https://github.com/GITHUB_USERNAME/REPO_SLUG/issues) for a list of proposed features (and known
-issues).
-
-- [Top Feature Requests](https://github.com/GITHUB_USERNAME/REPO_SLUG/issues?q=label%3Aenhancement+is%3Aopen+sort%3Areactions-%2B1-desc) (
-  Add your votes using the 👍 reaction)
-- [Top Bugs](https://github.com/GITHUB_USERNAME/REPO_SLUG/issues?q=is%3Aissue+is%3Aopen+label%3Abug+sort%3Areactions-%2B1-desc) (
-  Add your votes using the 👍 reaction)
-- [Newest Bugs](https://github.com/GITHUB_USERNAME/REPO_SLUG/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
 
 ## Support
 
@@ -162,36 +134,14 @@ issues).
 
 Reach out to the maintainer at one of the following places:
 
-- [GitHub issues](https://github.com/GITHUB_USERNAME/REPO_SLUG/issues/new?assignees=&labels=question&template=SUPPORT_QUESTION.md&title=support%3A+)
-- Contact options listed on [this GitHub profile](https://github.com/GITHUB_USERNAME)
+- [GitHub issues](https://github.com/HamidMolareza/QueraLens/issues/new?assignees=&labels=question&template=SUPPORT_QUESTION.md&title=support%3A+)
+- Contact options listed on
+  - [ARiYaNSEp0-0](https://github.com/ARiYaNSEp0-0/)
+  - [Hamid Molareza](https://github.com/HamidMolareza)
 
 ## Used By
 
-This project is used by the following companies:
-
-- Company 1
-- Company 2
-
-## FAQ
-
-#### Question 1
-
-Answer 1
-
-#### Question 2
-
-Answer 2
-
-## Project assistance
-
-If you want to say **thank you** or/and support active development of PROJECT_NAME:
-
-- Add a [GitHub Star](https://github.com/GITHUB_USERNAME/REPO_SLUG) to the project.
-- Tweet about the PROJECT_NAME.
-- Write interesting articles about the project on [Dev.to](https://dev.to/), [Medium](https://medium.com/) or your
-  personal blog.
-
-Together, we can make PROJECT_NAME **better**!
+- [Quera Solutions](https://github.com/HamidMolareza/Quera)
 
 ## Contributing
 
@@ -203,14 +153,16 @@ Please read [our contribution guidelines](docs/CONTRIBUTING.md), and thank you f
 
 ## Authors & contributors
 
-The original setup of this repository is by [GITHUB_USERNAME](https://github.com/GITHUB_USERNAME).
+The original setup of this repository is by:
+- [ARiYaNSEp0-0](https://github.com/ARiYaNSEp0-0/)
+- [Hamid Molareza](https://github.com/HamidMolareza)
 
 For a full list of all authors and contributors,
-see [the contributors page](https://github.com/GITHUB_USERNAME/REPO_SLUG/contributors).
+see [the contributors page](https://github.com/HamidMolareza/QueraLens/contributors).
 
 ## Security
 
-PROJECT_NAME follows good practices of security, but 100% security cannot be assured. PROJECT_NAME is provided **"as
+this project follows good practices of security, but 100% security cannot be assured. PROJECT_NAME is provided **"as
 is"** without any **warranty**.
 
 _For more information and to report security issues, please refer to our [security documentation](docs/SECURITY.md)._
@@ -221,16 +173,11 @@ This project is licensed under the **GPLv3**.
 
 See [LICENSE](LICENSE) for more information.
 
-## Acknowledgements
-
-> **[?]**
-> If your work was funded by any organization or institution, acknowledge their support here.
-> In addition, if your work relies on other software libraries, or was inspired by looking at other work, it is appropriate to acknowledge this intellectual debt too.
-
 ## Related
 
 Here are some related projects
 
-[Awesome README](https://github.com/matiassingers/awesome-readme)
+- [QueraReadmeGenerator](https://github.com/HamidMolareza/QueraReadmeGenerator)
+- [Quera Solutions](https://github.com/HamidMolareza/Quera)
 
 
